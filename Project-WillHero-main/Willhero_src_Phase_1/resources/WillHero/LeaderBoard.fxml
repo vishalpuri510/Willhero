@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WillHero.LeaderBoard">
+   <children>
+      <ImageView fx:id="backIcon" accessibleRole="BUTTON" fitHeight="51.0" fitWidth="60.0" layoutX="6.0" layoutY="6.0" onMousePressed="#setBack" pickOnBounds="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="WHITE" layoutX="504.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="2.0" text="No Stats Available Yet">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="NODE" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WillHero.GameOver">
+
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="102.0" layoutX="-8.0" layoutY="568.0" strokeType="INSIDE" width="1376.0">
+            <stroke>
+                <LinearGradient>
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.33351609110832214" green="0.7799555063247681" blue="0.9868420958518982" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.33572936058044434" green="0.31554579734802246" blue="0.9210526347160339" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+            <fill>
+                <LinearGradient>
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.33320000767707825" green="0.9800000190734863" blue="0.8048815727233887" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.4396296296296296">
+                            <color>
+                                <Color red="0.19903549551963806" green="0.17549951374530792" blue="0.8815789222717285" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.32199999690055847" green="0.9200000166893005" blue="0.8353878855705261" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <ImageView fx:id="st1" fitHeight="200.0" fitWidth="200.0" layoutX="79.0" layoutY="221.0">
+            <image>
+                <Image url="@superStar.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="st2" fitHeight="200.0" fitWidth="200.0" layoutX="301.0">
+            <image>
+                <Image url="@superStar.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="st3" fitHeight="200.0" fitWidth="200.0" layoutX="848.0">
+            <image>
+                <Image url="@superStar.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="st4" fitHeight="200.0" fitWidth="200.0" layoutX="1085.0" layoutY="212.0">
+            <image>
+                <Image url="@superStar.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="mainMenuIcon" accessibleRole="BUTTON" layoutX="332.0" layoutY="572.0" onMousePressed="#mainMenu" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="200.0" fitWidth="500.0" layoutX="404.0" layoutY="312.0">
+            <image>
+                <Image url="@Cracker5.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="restartIcon" accessibleRole="BUTTON" layoutX="931.0" layoutY="568.0" onMousePressed="#restart" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@play.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <Group />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="102.0" layoutX="570.0" layoutY="14.0" strokeType="INSIDE" width="220.0">
+            <effect>
+                <DropShadow />
+            </effect>
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0" startX="0.909952606635071" startY="0.17061611374407581">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.11999999731779099" green="0.5746666789054871" blue="1.0" opacity="0.8398268222808838" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.18479999899864197" green="0.8799999952316284" blue="0.7153558731079102" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <Text fx:id="floatingName" fill="WHITE" fontSmoothingType="LCD" layoutX="484.0" layoutY="248.0" stroke="#489df2" strokeMiterLimit="500.0" strokeType="OUTSIDE" strokeWidth="5.0" text="YOU WIN !!" textAlignment="CENTER" wrappingWidth="334.56005859375">
+            <font>
+                <Font name="Ubuntu Bold" size="83.0" />
+            </font>
+            <effect>
+                <DropShadow height="0.0" offsetX="-4.0" offsetY="5.0" radius="0.0" spread="0.12" width="0.0" />
+            </effect>
+        </Text>
+        <ProgressBar fx:id="progressBar" layoutX="317.0" layoutY="489.0" prefHeight="23.0" prefWidth="706.0" progress="0.0" />
+        <Label fx:id="currLocation" layoutX="641.0" layoutY="28.0" prefHeight="69.0" prefWidth="221.0" text="43" textAlignment="JUSTIFY">
+            <font>
+                <Font size="52.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startY="0.6142857142857142">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.18479999899864197" green="0.7529518008232117" blue="0.8799999952316284" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.1814814814814815">
+                            <color>
+                                <Color red="0.18479999899864197" green="0.7529518008232117" blue="0.8799999952316284" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.4866666666666667">
+                            <color>
+                                <Color red="0.1826999932527542" green="0.2974102199077606" blue="0.8700000047683716" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.1826999932527542" green="0.4805299937725067" blue="0.8700000047683716" opacity="0.5546218752861023" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

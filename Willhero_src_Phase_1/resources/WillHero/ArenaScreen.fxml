@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screenAnchorPane" maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WillHero.Game">
+    <children>
+        <Region layoutX="-1.0" onMousePressed="#resumeGame" prefHeight="768.0" prefWidth="1368.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutY="599.0" strokeType="INSIDE" width="1370.0">
+            <stroke>
+                <LinearGradient>
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.01568627543747425" green="0.08627451211214066" blue="0.11764705926179886" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.33572936058044434" green="0.31554579734802246" blue="0.9210526347160339" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+            <fill>
+                <LinearGradient>
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.33320000767707825" green="0.9800000190734863" blue="0.8048815727233887" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.4396296296296296">
+                            <color>
+                                <Color red="0.19903549551963806" green="0.17549951374530792" blue="0.8815789222717285" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.32199999690055847" green="0.9200000166893005" blue="0.8353878855705261" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <ImageView fx:id="mainMenuIcon" accessibleRole="BUTTON" fitHeight="82.0" fitWidth="64.0" layoutX="332.0" layoutY="603.0" onMousePressed="#mainMenu" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="restartIcon" accessibleRole="BUTTON" fitHeight="74.0" fitWidth="64.0" layoutX="643.0" layoutY="602.0" onMousePressed="#restart" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@play.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="resumeIcon" fitHeight="94.0" fitWidth="187.0" layoutX="579.0" layoutY="369.0" onMousePressed="#resumeGame">
+            <image>
+                <Image url="@tapplay.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="120.0" fitWidth="103.0" layoutX="617.0" layoutY="457.0" onMousePressed="#resumeGame">
+            <image>
+                <Image url="@handPoint.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="saveIcon" fitHeight="60.0" fitWidth="64.0" layoutX="945.0" layoutY="603.0" onMousePressed="#save" preserveRatio="true">
+            <image>
+                <Image url="@save.png" />
+            </image>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <Polygon layoutX="1064.0" layoutY="244.0" points="302.0, -140.0, 302.0, -170.0, -60.0, -182.0, 6.0, -152.0, -108.0, -122.0" stroke="#291e79" strokeLineCap="ROUND" strokeMiterLimit="50.0" strokeType="OUTSIDE">
+            <fill>
+                <LinearGradient startX="0.2" startY="0.26666666666666666">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.2367202788591385" green="0.48391610383987427" blue="0.8815789222717285" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.41959065198898315" green="0.6469541788101196" blue="0.7368420958518982" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <effect>
+                <DropShadow offsetX="-3.0" offsetY="3.0" />
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </Polygon>
+        <Text fx:id="floatingName" fill="WHITE" fontSmoothingType="LCD" layoutX="515.0" layoutY="120.0" stroke="#489df2" strokeMiterLimit="500.0" strokeType="OUTSIDE" strokeWidth="5.0" text=" WILL HERO" textAlignment="CENTER" wrappingWidth="334.56005859375">
+            <font>
+                <Font name="Ubuntu Bold" size="83.0" />
+            </font>
+            <effect>
+                <DropShadow height="0.0" offsetX="-4.0" offsetY="5.0" radius="0.0" spread="0.12" width="0.0" />
+            </effect>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="24.0" layoutY="109.0" rotate="-5.0" stroke="WHITE" strokeDashOffset="20.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="2.0" text="BEST" textAlignment="JUSTIFY">
+            <font>
+                <Font name="DejaVu Serif" size="26.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="WAIT" />
+            </cursor>
+            <effect>
+                <DropShadow offsetX="-5.0" offsetY="5.0" radius="4.75" width="0.0" />
+            </effect>
+        </Text>
+        <Label fx:id="bestLocation" blendMode="HARD_LIGHT" layoutX="117.0" layoutY="67.0" rotate="-5.0" text="0" textFill="WHITE">
+            <font>
+                <Font name="DejaVu Serif Bold" size="35.0" />
+            </font>
+            <effect>
+                <DropShadow height="0.0" offsetX="-4.0" offsetY="4.0" radius="0.0" width="0.0" />
+            </effect>
+        </Label>
+        <Rectangle arcHeight="9.0" arcWidth="9.0" fill="#e4c711" height="20.0" layoutX="1187.0" layoutY="80.0" stroke="#fff800" strokeLineJoin="ROUND" strokeWidth="5.0" width="21.0">
+            <effect>
+                <DropShadow height="0.0" offsetX="-3.0" offsetY="2.0" radius="4.75" />
+            </effect></Rectangle>
+        <Label fx:id="bestReward" layoutX="1227.0" layoutY="72.0" text="0" textFill="#fff800">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <effect>
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect>
+        </Label>
+        <Group />
+        <Text fill="#e4c711" fontSmoothingType="LCD" layoutX="1092.0" layoutY="100.0" stroke="#fff800" strokeDashOffset="20.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="2.0" text="BEST" textAlignment="JUSTIFY">
+            <font>
+                <Font name="DejaVu Serif" size="26.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="WAIT" />
+            </cursor>
+            <effect>
+                <DropShadow offsetX="-5.0" offsetY="5.0" radius="4.75" width="0.0" />
+            </effect>
+        </Text>
+    </children>
+</AnchorPane>

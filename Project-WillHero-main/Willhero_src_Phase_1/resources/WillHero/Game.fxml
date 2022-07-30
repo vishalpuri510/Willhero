@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gameAnchorPane" maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WillHero.Game">
+    <children>
+        <ImageView fx:id="pauseIcon" fitHeight="68.0" fitWidth="70.0" focusTraversable="true" layoutX="9.0" layoutY="12.0" onMousePressed="#pause" preserveRatio="true">
+            <cursor>
+                <Cursor fx:constant="WAIT" />
+            </cursor>
+         <image>
+            <Image url="@pause.png" />
+         </image>
+        </ImageView>
+      <ImageView fx:id="island11" fitHeight="153.0" fitWidth="94.0" layoutX="-17.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@island2.png" />
+         </image>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-1.0" offsetY="1.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="island21" fitHeight="135.0" fitWidth="79.0" layoutX="1331.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@island2.png" />
+         </image>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-1.0" offsetY="1.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="island211" fitHeight="135.0" fitWidth="79.0" layoutX="1045.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@island2.png" />
+         </image>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-1.0" offsetY="1.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+        <ImageView fx:id="island1" fitHeight="153.0" fitWidth="94.0" layoutX="225.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@island2.png" />
+            </image>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-1.0" offsetY="1.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+      <ImageView fx:id="island011" fitHeight="135.0" fitWidth="79.0" layoutX="749.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@island2.png" />
+         </image>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-1.0" offsetY="1.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+        <ImageView fx:id="island2" fitHeight="135.0" fitWidth="79.0" layoutX="480.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@island2.png" />
+            </image>
+            <effect>
+                <Blend mode="HARD_LIGHT" />
+                <DropShadow offsetX="-1.0" offsetY="1.0" radius="4.75" width="0.0" />
+            </effect>
+        </ImageView>
+        <Polygon layoutX="1064.0" layoutY="184.0" points="302.0, -140.0, 302.0, -165.3333282470703, -15.5, -174.6666717529297, 59.1666259765625, -153.3333282470703, -39.5, -128.0" stroke="#291e79" strokeLineCap="ROUND" strokeMiterLimit="50.0" strokeType="OUTSIDE">
+            <fill>
+                <LinearGradient startX="0.2" startY="0.26666666666666666">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.2367202788591385" green="0.48391610383987427" blue="0.8815789222717285" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.41959065198898315" green="0.6469541788101196" blue="0.7368420958518982" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <effect>
+                <DropShadow offsetX="-3.0" offsetY="3.0" />
+            </effect>
+        </Polygon>
+        <Label fx:id="currLocation" blendMode="HARD_LIGHT" layoutX="663.0" layoutY="9.0" text="0" textFill="WHITE">
+            <font>
+                <Font name="DejaVu Serif Bold" size="35.0" />
+            </font>
+            <effect>
+                <DropShadow height="11.86" offsetX="-4.0" offsetY="4.0" radius="2.465" width="0.0" />
+            </effect>
+        </Label>
+        <Rectangle arcHeight="9.0" arcWidth="9.0" fill="#e4c711" height="20.0" layoutX="1168.0" layoutY="22.0" stroke="#fff800" strokeLineJoin="ROUND" strokeWidth="5.0" width="21.0">
+            <effect>
+                <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+            </effect></Rectangle>
+        <Label fx:id="currReward" blendMode="HARD_LIGHT" layoutX="1207.0" layoutY="12.0" text="0" textFill="#fff800">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <effect>
+                <DropShadow height="0.0" offsetX="-3.0" offsetY="3.0" radius="0.0" width="0.0" />
+            </effect>
+        </Label>
+        <Rectangle arcHeight="9.0" arcWidth="9.0" fill="#e4c711" height="20.0" layoutX="1168.0" layoutY="22.0" stroke="#fff800" strokeLineJoin="ROUND" strokeWidth="5.0" width="21.0">
+            <effect>
+                <DropShadow height="0.0" offsetX="-3.0" offsetY="2.0" radius="4.75" />
+            </effect></Rectangle>
+      <ImageView fitHeight="77.0" fitWidth="200.0" layoutX="852.0" layoutY="266.0">
+         <image>
+            <Image url="@cloud2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="200.0" layoutX="197.0" layoutY="200.0">
+         <image>
+            <Image url="@cloud2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="593.0" layoutY="377.0">
+         <image>
+            <Image url="@cloud3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="200.0" layoutX="1122.0" layoutY="352.0">
+         <image>
+            <Image url="@cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="200.0" layoutX="-48.0" layoutY="567.0">
+         <image>
+            <Image url="@cloud4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="200.0" layoutX="1027.0" layoutY="541.0">
+         <image>
+            <Image url="@cloud2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="200.0" layoutX="282.0" layoutY="382.0">
+         <image>
+            <Image url="@cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="603.0" layoutY="547.0">
+         <image>
+            <Image url="@cloud3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="200.0" layoutX="572.0" layoutY="107.0">
+         <image>
+            <Image url="@cloud4.png" />
+         </image>
+      </ImageView>
+<!--      <ParallelCamera fx:id="camera" layoutX="-18.0" layoutY="383.0" onKeyPressed="#camera" />-->
+    </children>
+</AnchorPane>

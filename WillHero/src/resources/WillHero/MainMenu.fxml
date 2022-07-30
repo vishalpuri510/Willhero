@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WillHero.MainMenu">
+   <children>
+      <!--
+      -->
+      <ImageView fx:id="exit" accessibleRole="BUTTON" layoutX="923.0" layoutY="429.0" onMousePressed="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="newGameIcon" accessibleRole="BUTTON" layoutX="631.0" layoutY="425.0" onMousePressed="#newGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@play.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="resumeGameIcon" accessibleRole="BUTTON" layoutX="349.0" layoutY="411.0" onMousePressed="#resumeGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reloadGame.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="settingIcon" accessibleRole="BUTTON" layoutX="1214.0" layoutY="575.0" onMousePressed="#setting" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@settings.png" />
+         </image>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="leaderboardIcon" accessibleRole="BUTTON" layoutX="64.0" layoutY="558.0" onMousePressed="#showLeaderboard" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Leaderboard.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <Polygon layoutX="1064.0" layoutY="184.0" points="302.0, -140.0, 302.0, -165.3333282470703, -15.5, -174.6666717529297, 59.1666259765625, -153.3333282470703, -39.5, -128.0" stroke="#291e79" strokeLineCap="ROUND" strokeMiterLimit="50.0" strokeType="OUTSIDE">
+         <fill>
+            <LinearGradient startX="0.2" startY="0.26666666666666666">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2367202788591385" green="0.48391610383987427" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.41959065198898315" green="0.6469541788101196" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow offsetX="-3.0" offsetY="3.0" />
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+      </Polygon>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="24.0" layoutY="59.0" rotate="-5.0" stroke="WHITE" strokeDashOffset="20.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="2.0" text="BEST" textAlignment="JUSTIFY">
+         <font>
+            <Font name="DejaVu Serif" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <DropShadow offsetX="-5.0" offsetY="5.0" radius="4.75" width="0.0" />
+         </effect>
+      </Text>
+      <Label fx:id="bestLocation" blendMode="HARD_LIGHT" layoutX="117.0" layoutY="17.0" rotate="-5.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Bold" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" offsetX="-4.0" offsetY="4.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+      <Rectangle arcHeight="9.0" arcWidth="9.0" fill="#e4c711" height="20.0" layoutX="1168.0" layoutY="22.0" stroke="#fff800" strokeLineJoin="ROUND" strokeWidth="5.0" width="21.0">
+         <effect>
+            <DropShadow height="0.0" offsetX="-3.0" offsetY="2.0" radius="4.75" />
+         </effect></Rectangle>
+      <Label fx:id="bestReward" layoutX="1207.0" layoutY="12.0" text="0" textFill="#fff800">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="-3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect>
+      </Label>
+      <Text fx:id="floatingName" fill="WHITE" fontSmoothingType="LCD" layoutX="562.0" layoutY="120.0" stroke="#489df2" strokeMiterLimit="500.0" strokeType="OUTSIDE" strokeWidth="5.0" text=" WILL HERO" textAlignment="CENTER" wrappingWidth="240.56005859375">
+         <font>
+            <Font name="Ubuntu Bold" size="83.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" offsetX="-4.0" offsetY="5.0" radius="0.0" spread="0.12" width="0.0" />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>
